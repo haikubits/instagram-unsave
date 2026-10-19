@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Instagram Unsaver",
+  "version": "1.0.0",
+  "description": "Unsave all your saved Instagram posts with one click.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
